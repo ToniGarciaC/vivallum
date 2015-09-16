@@ -1,5 +1,5 @@
 Rails.application.routes.draw do
-  get 'vivallum/home'
+  root 'vivallum#home'
 
   get 'vivallum/productos'
 
