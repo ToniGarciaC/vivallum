@@ -1,4 +1,16 @@
 Rails.application.routes.draw do
+  get 'vivallum/home'
+
+  get 'vivallum/productos'
+
+  get 'vivallum/proyectos'
+
+  get 'vivallum/marcas'
+
+  get 'vivallum/news'
+
+  get 'vivallum/contacto'
+
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".
 
