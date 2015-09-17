@@ -1,15 +1,19 @@
 Rails.application.routes.draw do
-  root 'vivallum#home'
+  root             'vivallum#home'
+ get 'help'    => 'vivallum#help'
+ get 'about'   => 'vivallum#about'
+ get 'contact' => 'vivallum#contact'
 
-  get 'vivallum/productos'
+ get 'producto' => 'vivallum#productos'
+ #productos
+ get 'productos_interior' => 'vivallum#productos_interior'
+ get 'productos_exterior' => 'vivallum#productos_exterior'
+ get 'productos_complemento' => 'vivallum#productos_complemento'
+ get 'productos_led' => 'vivallum#productos_led'
 
-  get 'vivallum/proyectos'
 
-  get 'vivallum/marcas'
+ get 'ningunlado' => '#'
 
-  get 'vivallum/news'
-
-  get 'vivallum/contacto'
 
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".
