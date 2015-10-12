@@ -1,22 +1,32 @@
-<header class="navbar navbar-fixed-top navbar-inverse">
-  <div class="container">
-    <%= link_to image_tag("logo.png", alt: "vivallum logo", id: "logo"), '/' %>
-    <nav>
-      <ul class="nav navbar-nav navbar-right">
-        <li><%= link_to "Home", root_path %></li>
-        <li><%= link_to "Productos", producto_path %>
-            <ul>
-              <li>Interior</li>
-              <li>Exterior</li>
-              <li>Complementos</li>
-              <li>Leds</li>  
-            </ul>
-        </li>
-        <li><%= link_to "Proyectos", proyecto_path %></li>
-        <li><%= link_to "Marcas", marcas_path %></li>
-        <li><%= link_to "News", news_path %></li>
-        <li><%= link_to "Log in", '#' %></li>
-      </ul>
+
+
+    <nav class=" navbar navbar-inverse navbar-fixed-top">
+      <div class="container">
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+          <%= link_to image_tag("logo.png", alt: "vivallum logo", id: "logo"), '/' %>
+        </div>
+        <div id="navbar" class="navbar-collapse collapse">
+          <ul class="nav navbar-nav navbar-right">
+            <li><%= link_to "Home", root_path %></li>
+            <li><%= link_to "Productos", producto_path %>
+                <ul>
+                  <li>Interior</li>
+                  <li>Exterior</li>
+                  <li>Complementos</li>
+                  <li>Leds</li>
+                </ul>
+            </li>
+            <li><%= link_to "Proyectos", proyecto_path %></li>
+            <li><%= link_to "Marcas", marcas_path %></li>
+            <li><%= link_to "News", news_path %></li>
+            <li><%= link_to "Log in", '#' %></li>
+          </ul>
+        </div>
+      </div>      
     </nav>
-  </div>
-</header>

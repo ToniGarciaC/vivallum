@@ -1,0 +1,13 @@
+@import "bootstrap-sprockets";
+@import "bootstrap";
+
+
+/* mixins, variables, etc. */
+ body{
+  
+   header{
+     color: white;
+     box-shadow: 0 0 30px black;
+
+   }
+}
