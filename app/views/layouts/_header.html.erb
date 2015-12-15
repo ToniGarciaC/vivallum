@@ -1,6 +1,6 @@
 
 
-    <nav class=" navbar navbar-inverse navbar-fixed-top">
+    <nav class=" navbar navbar-default navbar-fixed-top" id="menu-header">
       <div class="container">
         <div class="navbar-header">
           <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
@@ -9,13 +9,14 @@
             <span class="icon-bar"></span>
             <span class="icon-bar"></span>
           </button>
-          <%= link_to image_tag("logo.png", alt: "vivallum logo", id: "logo"), '/' %>
+          <!-- <%= link_to image_tag("logo.png", alt: "image1"),'#' %> -->
+          <a href="#"><img src="/assets/logo.png" alt="vivallum logo"/></a>
         </div>
         <div id="navbar" class="navbar-collapse collapse">
-          <ul class="nav navbar-nav navbar-right">
-            <li><%= link_to "Home", root_path %></li>
-            <li><%= link_to "Productos", producto_path %>
-                <ul>
+          <ul class="nav navbar-nav">
+            <li>
+                <a href="#" class="dropdown-toogle" data-toggle="dropdown" role="button" aria-haspoup="true" aria-expanded="true"> Productos</span></a>
+                <ul class="dropdown-menu">
                   <li>Interior</li>
                   <li>Exterior</li>
                   <li>Complementos</li>
@@ -24,9 +25,12 @@
             </li>
             <li><%= link_to "Proyectos", proyecto_path %></li>
             <li><%= link_to "Marcas", marcas_path %></li>
-            <li><%= link_to "News", news_path %></li>
-            <li><%= link_to "Log in", '#' %></li>
+          </ul>
+          <ul class="nav navbar-nav navbar-right">
+            <li><a href="#">Showroom</a></li>
+            <li><a href="#">News</a></li>
+            <li><a href="#">Contacto</a></li>
           </ul>
         </div>
-      </div>      
+      </div>
     </nav>
